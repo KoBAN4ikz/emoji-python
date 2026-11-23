@@ -1,5 +1,5 @@
 """
-codec.py - Реализация кодека emoji_python.
+codec.py - Реализация кодека emoji_python и алиаса emoji.
 """
 
 import codecs
@@ -100,11 +100,11 @@ EMOJI_CODEC_INFO = codecs.CodecInfo(
 
 def search_function(encoding: str):
     normalized = encoding.lower().replace("-", "_").replace(".", "_")
-    if normalized == "emoji_python":
+    if normalized in ("emoji_python", "emoji"):
         return EMOJI_CODEC_INFO
     return None
 
 
 def register():
-    """Регистрирует кодек emoji_python в реестре codecs."""
+    """Регистрирует кодек emoji_python и алиас emoji в реестре codecs."""
     codecs.register(search_function)

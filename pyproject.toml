@@ -20,7 +20,9 @@ classifiers = [
 ]
 
 [project.scripts]
+emoji = "emoji_python.run:main"
 emoji-run = "emoji_python.run:main"
+
 
 [tool.setuptools.packages.find]
 where = ["."]

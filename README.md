@@ -5,8 +5,9 @@
 ## 📦 Быстрая установка
 
 ```bash
-pip install git+https://github.com/KoBAN4ikz/emoji-python.git
+pip install emoji-python
 ```
+
 
 После установки вы можете запускать свои скрипты через встроенную CLI-команду:
 ```bash
